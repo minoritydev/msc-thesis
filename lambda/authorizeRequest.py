@@ -3,6 +3,9 @@ import  boto3
 from boto3.dynamodb.conditions import Key
 
 def lambda_handler(event, context):
+    """
+    This function is responsible for authorizing a request.
+    """
     decision = 'deny'
    
     token = 'allow'
